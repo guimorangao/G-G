@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <title>Formulário de Dados Pessoais</title>
+    <link rel="stylesheet" href="dadosfunciorio.css">
+</head>
+<body>
+    <div class="top-footer">
+        <nav>
+            <ul>
+              <li><a href="clientes.html">Clientes</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="vendas.html">Vendas</a></li>
+              <li><a href="listar.html">Funcionários</a></li>
+              <li><a href="dadosfuncionario.html">Minha Conta</a></li>
+              <li><button type="button" id="logout-button" onclick="sair()"><i class="fas fa-sign-out-alt"></i></button></li>
+            </ul>
+          </nav>
+      </div>
+    <div class="container">
+        <h2>Dados Pessoais</h2>
+        <div class="section">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+            
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+            
+            <label for="rg">RG</label>
+            <input type="text" id="rg" name="rg" placeholder="Digite seu RG">
+            
+            <label for="genero">Gênero</label>
+                <select id="genero" name="genero">
+                    <option value="" disabled selected>Selecione seu gênero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                    <option value="Prefiro não dizer">Prefiro não dizer</option>
+                </select>
+            
+        </div>
+
+        <h2>Informações de Login</h2>
+        <div class="section">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login" placeholder="Digite seu nome de login">
+            
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+            
+            <label for="repetir-senha">Confirmar senha</label>
+            <input type="password" id="repetir-senha" name="repetir-senha" placeholder="Repita sua senha">
+            <div class="section">
+                <button type="button" id="alterar-dados" onclick="alterarDados()">Alterar Dados</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function alterarDados() {
+            alert('Confirme a alteração!');
+        }
+
+        function sair() {
+            alert('Botão "Sair" clicado!');
+            window.location.href = 'C:/Users/Windows/Downloads/projeto final/cliente/index.html';
+        }
+    </script>
+</body>
+</html>

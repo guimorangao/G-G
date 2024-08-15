@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menuoculto.css">
+  <link rel="script" href="scrpts.js">
+  <link rel="stylesheet" href="barradepesquisa.css">
+  <title>Home G&G</title>
+</head>
+<body>
+
+  <footer class="footer-top">
+    <img src="/Users/Windows/Downloads/projeto final/imagens/logo.png"alt="G&G Logo" class="logo">
+  </footer>
+  
+  <header>
+    <h1 class="titulo" src="">G&G</h1>
+  </header>
+
+  <section id="principal">
+    <a href="meusdados.html"><span style="font-size: 30px;cursor: pointer;" onclick="abrirna()"><img src="/Users/Windows/Downloads/projeto final/imagens/avatar.png" class="avatar"></span></a>
+    <a href="carrinho.html"><span style="font-size: 30px;cursor: pointer;" onclick="abrirna()"><img src="/Users/Windows/Downloads/projeto final/imagens/carrinho.jpg" class="carrinho"></span></a>
+    <div class="container"></div>
+  </section>
+
+  <main>
+    <div class="lupa">
+      <input type="text" placeholder="Search...">
+      <div class="search"></div>
+    </div>
+    <br>
+  </main>
+
+  <nav>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="barra active">
+    <div class="fecha-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu">
+    <div class="item"><a href="meusdados.html"><i class="fas fa-desktop"></i>Minha conta</a></div>
+    <div class="item">
+      <a class="sub-btn"><i img=""></i>cachorro<i class="fas fa-angle-right suspende"></i></a>
+    <div class="sub-menu">
+      <a href="#" class="sub-item">Acessorios de alimentação</a>
+      <a href="#" class="sub-item">rações</a>
+      <a href="#" class="sub-item">Roupas</a>
+      <a href="#" class="sub-item">Coleiras, Guias e Peitorais</a>
+      <a href="#" class="sub-item">Brinquedos</a>
+    </div>
+    
+    <div class="item">
+      <a class="sub-btn"><i img=""></i>Gato<i class="fas fa-angle-right suspende"></i></a>
+    <div class="sub-menu">
+      <a href="#" class="sub-item">Acessorios de alimentação</a>
+      <a href="#" class="sub-item">rações</a>
+      <a href="#" class="sub-item">Roupas</a>
+      <a href="#" class="sub-item">Coleiras, Guias e Peitorais</a>
+      <a href="#" class="sub-item">Brinquedos</a>
+    </div>
+    </div>
+        <div class="item"><a href="sobre-nos.html"><i class="fas fa-info-circle"></i>Sobre nos</a></div>
+          </div>
+    </div>
+
+  </nav>
+  </header>
+        
+<script src="menuoculto.js"></script>
+<script src="footer.js"></script>
+
+</body>
+</html>

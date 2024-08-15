@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Petz</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="menuoculto.css">
+</head>
+<body>
+
+  <nav>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="barra active">
+      <div class="fecha-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="menu">
+        <div class="item"><a href="login.html"><i class="fas fa-desktop"></i>Login</a></div>
+        <div class="item">
+          <a class="sub-btn"><i img=""></i>cachorro<i class="fas fa-angle-right suspende"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Acessorios de alimentação</a>
+            <a href="#" class="sub-item">rações</a>
+            <a href="#" class="sub-item">Roupas</a>
+            <a href="#" class="sub-item">Coleiras, Guias e Peitorais</a>
+            <a href="#" class="sub-item">Brinquedos</a>
+
+          </div>
+            <div class="item">
+              <a class="sub-btn"><i img=""></i>Gato<i class="fas fa-angle-right suspende"></i></a>
+              <div class="sub-menu">
+                <a href="#" class="sub-item">Acessorios de alimentação</a>
+                <a href="#" class="sub-item">rações</a>
+                <a href="#" class="sub-item">Roupas</a>
+                <a href="#" class="sub-item">Coleiras, Guias e Peitorais</a>
+                <a href="#" class="sub-item">Brinquedos</a>
+              </div>
+            
+        </div>
+        <div class="item"><a href="sobre-nos.html"><i class="fas fa-info-circle"></i>Sobre nos</a></div>
+      </div>
+    </div>
+
+  </nav>
+  <div class="container">
+    <div class="header">
+        <img src="/Users/Windows/Downloads/projeto final/imagens/3.png" alt="Petz Logo" class="logo">
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Acesse sua conta</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="userType">Tipo de usuário</label>
+                    <select id="userType" required>
+                        <option value="client">Cliente</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail ou CPF/CNPJ</label>
+                    <input type="text" id="email" placeholder="Digite seu e-mail ou CPF/CNPJ" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" id="submitBtn">ENTRAR</button>
+                <div class="login-options">
+                    <a href="#">Esqueci a senha</a>
+                </div>
+            </form>
+            </div>
+            <div class="signup-box">
+                <h2>Criar uma conta é rápido, fácil e gratuito!</h2>
+                <p>Com a sua conta da G&G você tem acesso a Ofertas exclusivas, descontos, acompanhar os seus pedidos e muito mais!</p>
+                <a href="cadastro.html"><button class="signup-btn">Criar minha conta</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scrpts.js"></script>
+    <script src="menuoculto.js"></script>
+    <script src="java.js"></script>
+    <script src="java1.js"></script>
+</body>
+</html>

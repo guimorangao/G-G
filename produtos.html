@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+
+    <div class="top-footer">
+      <nav>
+          <ul>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="vendas.html">Vendas</a></li>
+            <li><a href="">Funcionários</a></li>
+            <li><a href="dadosfuncionario.html">Minha Conta</a></li>
+            <li><button type="button" id="logout-button" onclick="sair()"><i class="fas fa-sign-out-alt"></i></button></li>
+          </ul>
+        </nav>
+    </div>
+
+    <h1>Cadastro de Produtos</h1>
+    
+    <form id="productForm">
+        <label for="productName">Nome do Produto:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productCode">Código do Produto:</label>
+        <input type="text" id="productCode" required>
+
+        <label for="productCost">Custo:</label>
+        <input type="number" id="productCost" step="0.01" required>
+
+        <label for="productPrice">Valor de Venda:</label>
+        <input type="number" id="productPrice" step="0.01" required>
+
+        <label for="productImage">Link da Imagem:</label>
+        <input type="url" id="productImage" required>
+
+        <label for="productQuantity">Quantidade em Estoque:</label>
+        <input type="number" id="productQuantity" required>
+
+        <button type="button" onclick="addProduct()">Adicionar Produto</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <table id="productList">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Código</th>
+                <th>Custo</th>
+                <th>Venda</th>
+                <th>Imagem</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <div id="summary">
+        <p>Total de Produtos: <span id="totalQuantity">0</span></p>
+        <p>Valor Total: R$ <span id="totalValue">0.00</span></p>
+    </div>
+
+    <script src="produtos.js"></script>
+    <script>
+        function sair() {
+            alert('Botão "Sair" clicado!');
+            window.location.href = 'C:/Users/Windows/Downloads/projeto final/cliente/index.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="stylecarrinho.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menuoculto.css">
+
+</head>
+<body>
+<header>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="barra active">
+        <div class="fecha-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="index.html"><i class="fas fa-paw icon"></i>Pet Shop</a></div>
+          <div class="item"><a class="sub-btn"><i class=""></i>cachorro<i class="fas fa-angle-right suspende"></i></a>
+            <div class="sub-menu">
+              <a href="#" class="sub-item">Acessorios de alimentação</a>
+              <a href="#" class="sub-item">rações</a>
+              <a href="#" class="sub-item">Roupas</a>
+              <a href="#" class="sub-item">Coleiras, Guias e Peitorais</a>
+              <a href="#" class="sub-item">Brinquedos</a>
+            </div>
+
+              <div class="item">
+                <a class="sub-btn"><i class="fas fa-cat icon"></i>Gato<i class="fas fa-angle-right suspende"></i></a>
+                <div class="sub-menu">
+                  <a href="#" class="sub-item">Acessorios de alimentação</a>
+                  <a href="#" class="sub-item">rações</a>
+                  <a href="#" class="sub-item">Roupas</a>
+                  <a href="#" class="sub-item">Coleiras, Guias e Peitorais</a>
+                  <a href="#" class="sub-item">Brinquedos</a>
+                </div>
+              
+              </div>
+              <div class="item"><a href="index.html"><i class="fas fa-info-circle"></i>Sobre nos</a></div>
+          </div>
+      </div>
+</header>
+
+<h1>Carrinho de Compras</h1>
+
+<div class="products">
+    <div class="product">
+        <h2>Produto 1</h2>
+        <img class="imagem" src="">
+        <p>Preço: R$ 10,00</p>
+        <form action="/add_to_cart" method="post">
+            <input type="hidden" name="name" value="Produto 1">
+            <input type="hidden" name="price" value="10.00">
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+    </div>
+    <div class="product">
+        <h2>Produto 2</h2>
+        <img class="imagem" src="">
+        <p>Preço: R$ 20,00</p>
+        <form action="/add_to_cart" method="post">
+            <input type="hidden" name="name" value="Produto 2">
+            <input type="hidden" name="price" value="20.00">
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+    </div>
+    <div class="product">
+        <h2>Produto 3</h2>
+        <img class="imagem" src="">
+        <p>Preço: R$ 20,00</p>
+        <form action="/add_to_cart" method="post">
+            <input type="hidden" name="name" value="Produto 3">
+            <input type="hidden" name="price" value="20.00">
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+    </div>
+    <div class="product">
+        <h2>Produto 4</h2>
+        <img class="imagem" src="">
+        <p>Preço: R$ 20,00</p>
+        <form action="/add_to_cart" method="post">
+            <input type="hidden" name="name" value="Produto 4">
+            <input type="hidden" name="price" value="20.00">
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+    </div>
+    <div class="product">
+        <h2>Produto 5</h2>
+        <img class="imagem" src="">
+        <p>Preço: R$ 20,00</p>
+        <form action="/add_to_cart" method="post">
+            <input type="hidden" name="name" value="Produto 5">
+            <input type="hidden" name="price" value="20.00">
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+    </div>
+    <!-- Adicione mais produtos conforme necessário -->
+</div>
+
+<h2>Carrinho</h2>
+<ul id="cart">
+    <!-- Itens do carrinho aparecerão aqui -->
+</ul>
+<p style="text-align: center;">Total: R$ <span id="total">0.00</span></p>
+
+    <script src=""></script>
+    <script src="menuoculto.js"></script>
+</body>
+</html>

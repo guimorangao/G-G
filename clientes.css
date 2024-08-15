@@ -1,0 +1,169 @@
+/* clientes.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.top-footer {
+    margin-left: -5%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 110%;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.top-footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-footer nav ul li {
+    margin: 0 15px;
+}
+
+.top-footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.top-footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#logout-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0px; /* Ajuste o padding para ajustar o tamanho do botão */
+    border-radius: 50%; /* Faz o botão ser redondo */
+    cursor: pointer;
+    font-size: 14px; /* Tamanho do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1950%;
+}
+
+#logout-button i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.conteudo {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa_registro {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.formulario {
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="number"],
+.formulario input[type="date"],
+.formulario input[type="password"],
+.formulario select {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.formulario input[type="radio"] {
+    margin-right: 5px;
+    
+}
+
+#pf-campo, #pj-campo {
+    display: none;
+}
+
+#pf-campo.active, #pj-campo.active {
+    display: block;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 32%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+a {
+    text-decoration: none;
+}
+
+#clientList {
+    margin-top: 20px;
+}
+
+#clients {
+    list-style: none;
+    padding: 0;
+}
+
+#clients li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button.delete {
+    background-color: #f44336; /* Cor vermelha para o botão de excluir */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #e53935; /* Cor vermelha mais escura para o hover */
+}

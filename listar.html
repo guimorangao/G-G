@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <title>Lista de Funcionários</title>
+    <link rel="stylesheet" href="funcionarios.css">
+</head>
+<body>
+
+    <div class="top-footer">
+        <nav>
+            <ul>
+              <li><a href="clientes.html">Clientes</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="vendas.html">Vendas</a></li>
+              <li><a href="listar.html">Funcionários</a></li>
+              <li><a href="dadosfuncionario.html">Minha Conta</a></li>
+              <li><button type="button" id="logout-button" onclick="sair()"><i class="fas fa-sign-out-alt"></i></button></li>
+            </ul>
+          </nav>
+      </div>
+
+    <div class="container">
+        <a href="funcionarios.html">Adicionar Novo Funcionário</a>
+        <h2>Lista de Funcionários</h2>
+        <ul id="employee-list">
+            <!-- Lista de funcionários será inserida aqui -->
+        </ul>
+    </div>
+
+    <script>
+        function sair() {
+            alert('Botão "Sair" clicado!');
+            window.location.href = 'C:/Users/Windows/Downloads/projeto final/cliente/index.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obter a lista de funcionários do localStorage
+            const funcionarios = JSON.parse(localStorage.getItem('funcionarios')) || [];
+
+            const listContainer = document.getElementById('employee-list');
+
+            // Criar e adicionar itens de lista para cada funcionário
+            funcionarios.forEach(funcionario => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${funcionario.nome} ${funcionario.sobrenome} - ${funcionario.email}`;
+                listContainer.appendChild(listItem);
+            });
+        });
+    </script>
+</body>
+</html>

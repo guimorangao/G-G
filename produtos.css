@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.top-footer {
+    margin-left: -5%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 110%;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.top-footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-footer nav ul li {
+    margin: 0 15px;
+}
+
+.top-footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.top-footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#logout-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0px; /* Ajuste o padding para ajustar o tamanho do botão */
+    border-radius: 50%; /* Faz o botão ser redondo */
+    cursor: pointer;
+    font-size: 14px; /* Tamanho do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1950%;
+}
+
+#logout-button i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+#productForm{
+    margin-top: 10%;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #e5e8ec;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    background-color: #e5e8ec;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100px;
+}
+
+button.remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+button.remove:hover {
+    background-color: #c82333;
+}

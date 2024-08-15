@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <title>Adicionar Cliente</title>
+    <link rel="stylesheet" href="clientes.css">
+</head>
+<body>
+
+    <div class="top-footer">
+        <nav>
+            <ul>
+              <li><a href="clientes.html">Clientes</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="vendas.html">Vendas</a></li>
+              <li><a href="funcionarios.html">Funcionários</a></li>
+              <li><a href="dadosfuncionario.html">Minha Conta</a></li>
+              <li><button type="button" id="logout-button" onclick="sair()"><i class="fas fa-sign-out-alt"></i></button></li>
+            </ul>
+          </nav>
+      </div>
+
+
+    <div class="conteudo">
+        <div class="registro">
+            <div class="caixa_registro">
+                <h2>Criando uma conta</h2>
+                <form id="formregistro">
+                    <div class="formulario">
+                        <label><input type="radio" name="personType" value="pf" checked>Pessoa Física</label>
+                        <label><input type="radio" name="personType" value="pj">Pessoa Jurídica</label>
+                    </div>
+
+                    <!-- Campos para Pessoa Física -->
+                    <div id="pf-campo">
+                        <div class="formulario">
+                            <label for="pf-nome">Nome e sobrenome</label>
+                            <input type="text" id="pf-nome" placeholder="Digite seu nome e sobrenome" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-email">E-mail</label>
+                            <input type="email" id="pf-email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-cell">Celular</label>
+                            <input type="tel" id="pf-cell" placeholder="DDD + Celular" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-tel">Telefone</label>
+                            <input type="tel" id="pf-tel" placeholder="DDD + Telefone" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-sexo">Sexo</label>
+                            <select id="pf-sexo" required>
+                                <option value="">Escolha o sexo</option>
+                                <option value="mas">Masculino</option>
+                                <option value="fem">Feminino</option>
+                            </select>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-date">Data de nascimento</label>
+                            <input type="date" id="pf-date" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-cpf">CPF</label>
+                            <input type="text" id="pf-cpf" placeholder="Digite o seu CPF" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-rg">RG</label>
+                            <input type="text" id="pf-rg" placeholder="Digite o seu RG" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-rua">Rua</label>
+                            <input type="text" id="pf-rua" placeholder="Digite sua rua" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-n">Número</label>
+                            <input type="number" id="pf-n" placeholder="Número da residência" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-bairro">Bairro</label>
+                            <input type="text" id="pf-bairro" placeholder="Digite seu bairro" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-cidade">Cidade</label>
+                            <input type="text" id="pf-cidade" placeholder="Digite sua cidade" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-complemento">Complemento</label>
+                            <input type="text" id="pf-complemento" placeholder="Complemento" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pf-senha">Senha</label>
+                            <input type="password" id="pf-senha" placeholder="Digite sua senha" required>
+                        </div>
+                        <button type="submit">Adicionar cliente</button>
+                    </div>
+
+                    <!-- Campos para Pessoa Jurídica -->
+                    <div id="pj-campo" style="display: none;">
+                        <div class="formulario">
+                            <label for="pj-nome">Nome da empresa</label>
+                            <input type="text" id="pj-nome" placeholder="Digite o nome da empresa" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-cnpj">CNPJ</label>
+                            <input type="text" id="pj-cnpj" placeholder="Digite o CNPJ" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-email">E-mail</label>
+                            <input type="email" id="pj-email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-cell">Celular</label>
+                            <input type="tel" id="pj-cell" placeholder="DDD + Celular" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-tel">Telefone</label>
+                            <input type="tel" id="pj-tel" placeholder="DDD + Telefone" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-sexo">Sexo</label>
+                            <select id="pj-sexo" required>
+                                <option value="">Escolha o sexo</option>
+                                <option value="mas">Masculino</option>
+                                <option value="fem">Feminino</option>
+                            </select>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-date">Data de nascimento</label>
+                            <input type="date" id="pj-date" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-ie">Inscrição Estadual</label>
+                            <input type="text" id="pj-ie" placeholder="Digite a Inscrição Estadual" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-rua">Rua</label>
+                            <input type="text" id="pj-rua" placeholder="Digite sua rua" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-n">Número</label>
+                            <input type="number" id="pj-n" placeholder="Número da residência" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-bairro">Bairro</label>
+                            <input type="text" id="pj-bairro" placeholder="Digite seu bairro" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-cidade">Cidade</label>
+                            <input type="text" id="pj-cidade" placeholder="Digite sua cidade" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-complemento">Complemento</label>
+                            <input type="text" id="pj-complemento" placeholder="Complemento" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="pj-senha">Senha</label>
+                            <input type="password" id="pj-senha" placeholder="Digite sua senha" required>
+                        </div>
+                        <button type="submit">Adicionar cliente</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="clientList">
+            <h2>Lista de Clientes</h2>
+            <ul id="clients"></ul>
+        </div>
+    </div>
+    <script src="clientes.js"></script>
+
+    <script>
+    function sair() {
+        alert('Botão "Sair" clicado!');
+        window.location.href = 'C:/Users/Windows/Downloads/projeto final/cliente/index.html';
+    }
+    </script>
+</body>
+</html>

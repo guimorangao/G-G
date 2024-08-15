@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body{
+    min-height: 130vh;
+  }
+  
+  .footer-top {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: -20px; /* Inicialmente, o footer está abaixo da viewport */
+    width: 100%;
+    z-index: 1000;
+    transition: bottom 0.3s; /* Adiciona uma transição suave para a mudança de posição */
+  }
+  
+  .titulo{
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 2%;
+    font-family: Verdana;
+    color: rgb(36, 97, 173 );
+    font-size: 350%;
+  }
+
+  .logo2{
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 42%;
+  }
+
+  .menu-btn{
+    position: absolute;
+    color: #000000;
+    font-size: 25px;
+    top: 4%;
+    cursor:pointer;
+    margin-left: 2%;
+  }
+
+  form{
+    margin-top: 10%;
+  }
+
+  .formulario {
+    margin-bottom: 15px;
+    margin-left: 38%;
+    top: -50%;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.formulario input, .formulario select {
+    width: calc(40% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+}
+
+button {
+    width: 20%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 40%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

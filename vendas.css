@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.top-footer {
+    margin-left: -5%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 110%;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.top-footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-footer nav ul li {
+    margin: 0 15px;
+}
+
+.top-footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.top-footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#logout-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0px; /* Ajuste o padding para ajustar o tamanho do botão */
+    border-radius: 50%; /* Faz o botão ser redondo */
+    cursor: pointer;
+    font-size: 14px; /* Tamanho do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1950%;
+}
+
+#logout-button i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 18%;
+}
+
+input {
+    width: 60%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin-left: 17%;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 42%;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffffff;
+}
+
+button.delete {
+    background-color: #f44336; /* Cor vermelha para o botão de excluir */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #e53935; /* Cor vermelha mais escura para o hover */
+}

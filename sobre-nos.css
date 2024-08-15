@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007bff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120%;
+}
+
+.footer-top {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: -20px; /* Inicialmente, o footer está abaixo da viewport */
+    width: 100%;
+    z-index: 1000;
+    transition: bottom 0.3s; /* Adiciona uma transição suave para a mudança de posição */
+}
+
+.menu-btn{
+    position: absolute;
+    color: #000000;
+    font-size: 25px;
+    top: 5%;
+    cursor:pointer;
+    margin-left: -42%;
+}
+
+.titulo{
+    color:#ffff;
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#frete{
+    position: absolute;
+    top: 35%;
+    color: #ffff;
+    left: 15%;
+}
+
+.Entrega{
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    font-size: 30px;
+    color: #ffff;
+}
+
+#Entrega{
+    position: absolute;
+    top: 44%;
+    left: 7%;
+    font-size: 20px;
+    color: #ffff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.Produtos{
+    position: absolute;
+    top: 38%;
+    left: 47%;
+    font-size: 30px;
+    color: #ffff;
+}
+
+#Produtos{
+    position: absolute;
+    top: 44%;
+    left: 35%;
+    font-size: 20px;
+    color: #ffff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#osso{
+    position: absolute;
+    top: 35%;
+    color: #ffff;
+    left: 49%;
+    font-size: 40px;
+}
+
+.Assinatura{
+    position: absolute;
+    top: 38%;
+    left: 80%;
+    font-size: 30px;
+    color: #ffff;
+}
+
+#Assinatura{
+    position: absolute;
+    top: 44%;
+    left: 69%;
+    font-size: 20px;
+    color: #ffff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#logo{
+    position: absolute;
+    top: 35%;
+    color: #ffff;
+    left: 49%;
+    font-size: 40px;
+}
